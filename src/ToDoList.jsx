@@ -24,6 +24,9 @@ function ToDoList(){
 
   function moveTaskUp(index){
 
+    if(index > 0){
+      const updatedTasks = [...tasks]
+    }
   }
 
   function moveTaskDown(index){
