@@ -10,7 +10,7 @@ function ToDoList(){
   }
 
   function addTask(){
-
+    setTasks(t => [...t, newTask]);
   }
 
   function deleteTask(index){
