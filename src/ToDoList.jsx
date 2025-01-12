@@ -46,7 +46,9 @@ function ToDoList(){
 
     <ol>
       {tasks.map((task, index) =>
-          <li></li>
+          <li key={index}>
+            <span className='text'>{task}</span>
+          </li>
           )}
     </ol>
 
