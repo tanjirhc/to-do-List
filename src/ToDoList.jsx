@@ -3,10 +3,10 @@ import React, { useState } from 'react'
 function ToDoList(){
 
   const [tasks, setTasks] = useState([]);
-  const [newTask, setNewTask] = useState([]);
+  const [newTask, setNewTask] = useState(" ");
 
   function handleInputChange(event){
-    
+    setNewTask(event.target.value);
   }
 
   function addTask(){
@@ -33,7 +33,8 @@ function ToDoList(){
       <input 
         type="text" 
         placeholder='Enter a task ...'
-        value={{newTask}}/>
+        value={newTask} 
+        onChange={handleInputChange} />
 
     </div>
 
