@@ -2,11 +2,11 @@ import { useState } from 'react'
 
 function ToDoList(){
 
-  const [tasks, setTasks] = useState(["Eat breakfast", "Take a shower", "Walk the dog"]);
+  const [tasks, setTasks] = useState([]);
   const [newTask, setNewTask] = useState([]);
 
   function handleInputChange(event){
-    setNewTask(event.target.value);
+    
   }
 
   function addTask(){
@@ -31,27 +31,11 @@ function ToDoList(){
     <h1>To-Do-List</h1>
     <div>
       <input 
-          type="text" 
-          placeholder='Enter a task ...'
-          value={newTask}
-          onChange={handleInputChange} />
-      
-      <button 
-              className='add-button'
-              onClick={addTask}
-              >
-        Add
-      </button>
+        type="text" />
 
     </div>
 
-    <ol>
-      {tasks.map((task, index) => 
-        <li key={}>
-
-        </li>
-        )}
-    </ol>
+    
 
   </div>)
 }
