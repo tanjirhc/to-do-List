@@ -49,9 +49,19 @@ function ToDoList(){
           <li key={index}>
             <span className='text'>{task}</span>
             <button 
-            className='delete-button'
-            onClick={() => deleteTask(index)}>
+              className='delete-button'
+              onClick={() => deleteTask(index)}>
               Delete
+            </button>
+            <button 
+              className='c'
+              onClick={() => moveTaskUp(index)}>
+              Up
+            </button>
+            <button 
+              className='move-button'
+              onClick={() => moveTaskDown(index)}>
+              Down
             </button>
           </li>
           )}
